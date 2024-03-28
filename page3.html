@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define your CSS file here so you can style your HTML -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="question.css" />
+
+    <title>Page 3</title>
+    <style>
+      :root {
+        background-image: url("https://cdna.artstation.com/p/assets/images/images/050/592/060/original/michael-tenebrae-tokyo-rain.gif?1655217933");
+        background-size: 1000px 1000px;
+      }
+    </style>
+
+    <script type="text/javascript">
+      var tick = new Audio();
+      tick.src = "music/tickkk.mp3";
+    </script>
+
+    <audio autoplay loop>
+      <source src="music/cake.mp3" type="audio/mp3">
+    </audio>
+
+
+  </head>
+  <body>
+
+      <div class="dialoguebox">
+        <div class="question">
+          <h1 class="questioncopy">You return back to the shop and finish up a busy last shift. Is it just you, or did your sushi rolling skills improve? 
+            <br><br>The old man thanks you for your hard work, 
+            and offers you a position working beside him during your time in the city. What will you do?
+          <div class="choice" onclick="window.location.href='page4.html'" onMouseEnter="tick.play()">
+            <h1 class="choicelink">You were on fire during your final shift! This just might be the career for you! 
+              Besides, you want to stay in the city...just for a bit longer.
+          </div>
+
+          <div class="choice2" onclick="window.location.href='page4.html'" onMouseEnter="tick.play()">
+            <h1 class="choicelink">Your final shift was exhausting. While it was an interesting side quest, 
+              you just want to go back home...wherever that is. It's time to move on.</h1>
+          </div>
+
+        </div>
+          
+      </div> 
+
+  </body>
+</html>

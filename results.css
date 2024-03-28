@@ -1,0 +1,161 @@
+:root {
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/050/592/060/original/michael-tenebrae-tokyo-rain.gif?1655217933");
+    background-size: 1000px 1000px;
+    --sky_100: #ebf0f3;
+    --sky_300: #18aaff;
+    --blue_300: #385ddf;
+    --dark-navy: #000004;
+    --purple_300: #9ea8ff;
+    --purple_hover: #3b3561;
+    --purple_500: #4f38df;
+    --pink_700: #b438df;
+    --pink_400: #ff8f8f;
+    --pink_300: #df389c;
+    --pink_100: #ffabce;
+    --orange_300: #ffc985;
+    --orange_100: #ffedcc;
+    --purple_main: #340b67;
+    --purple_main_hover: #b49fcc;
+}
+
+html {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav {
+    background-color: var(--purple_300);
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.title {
+    color: var(--sky_100);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.pictureCaption {
+    margin-top: 1rem;
+}
+
+.fullypic {
+    margin-top: 2rem;
+    object-fit: cover;
+}
+
+p {
+    border: 3px solid black;
+    /*outline: #4CAF50 solid 10px;*/
+    margin: auto;
+    padding: 500px;
+    text-align: center;
+}
+
+.personality-image {
+    width: 300px;
+    margin: 1rem auto;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--dark-navy);
+    background-color: var(--pink_100);
+    border: 2px solid var(--pink_300);
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    padding: 0.543rem 1rem;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.strengths {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    max-width: 80%;
+}
+
+.strengths li {
+    background-color: var(--pink_100);
+    border: 2px solid var(--pink_300);
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.friend-quote {
+    font-size: 1rem;
+    color: var(--dark-navy);
+    background-color: var(--pink_100);
+    border: 2px solid var(--pink_300);
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.sushi-search-guide {
+    font-size: 1rem;
+    color: var(--dark-navy);
+    background-color: var(--pink_100);
+    border: 2px solid var(--pink_300);
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.glowing-text {
+    color: var(--sky_100);
+    /* Light color for text */
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    /* White glow effect */
+}
+
+.play-again {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    max-width: 40%;
+    font-size: 1rem;
+    color: var(--dark-navy);
+    background-color: var(--pink_100);
+    border: 2px solid var(--pink_300);
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    width: 40%;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.play-again:hover {
+    background-color: var(--pink_100);
+    background: rgba(189, 126, 130, 0.5);
+}

@@ -1,0 +1,143 @@
+/* Add your font via Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+/* CSS Reset. You don't need to understand these.
+ * They're only here to make CSS consistent across all browsers. */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+/* Define your color scheme here, taken from Fullyhacks color scheme. */
+:root {
+  
+  --sky_100: #abe1ff;
+  --sky_300: #18aaff;
+  --blue_300: #385ddf;
+  --purple_300: #9ea8ff;
+  --purple_hover: #3b3561;
+  --purple_500: #4f38df;
+  --pink_700: #b438df;
+  --pink_400: #ff8f8f;
+  --pink_300: #df389c;
+  --pink_100: #ffabce;
+  --orange_300: #ffc985;
+  --orange_100: #ffedcc;
+  --purple_main: #340b67;
+  --purple_main_hover: #b49fcc;
+}
+
+html {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button.startButton { 
+  margin-top: 15rem;
+  background: #dffff952;
+  color: #dffff9;
+  border: 8px solid #dffff9;
+  height: 100px;
+  width: 250px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 4rem;
+  animation: hovering 2s infinite ease-in-out, glowbox 1s infinite alternate linear, glowstartbutton 1s infinite alternate linear;
+  -webkit-animation: hovering 2s infinite ease-in-out, glowbox 1s infinite alternate linear, glowstartbutton 1s infinite alternate linear;
+  animation-delay: 0s;
+  transition: background-color 0.3 ease;
+}
+
+button.startButton:hover {
+  background-color: #dffff98f;
+}
+
+.title {
+  color: #dffff9;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 10px;
+  justify-content: center;
+  font-size: 4rem;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  text-align: center;
+}
+
+.pictureCaption {
+  color: #dffff9;
+  font-size: 2.3rem;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  text-align: center;
+}
+
+.fullypic {
+  margin-top: 1rem;
+  object-fit: cover;
+  margin-left: 25rem;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00e1ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00e5ff;
+  }
+}
+
+@keyframes glowstartbutton {
+  from {
+    text-shadow: 0 0 5px #00e1ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00e1ff;
+  }
+}
+
+@keyframes glowbox {
+  from {
+    box-shadow: 0 0 20px #00e1ff;
+  }
+  to {
+    box-shadow: 0 0 50px #00e1ff;
+  }
+}
+
+@keyframes hovering {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
